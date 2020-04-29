@@ -1,0 +1,93 @@
+html,
+body {
+  background-color: lightcoral;
+  color: lavenderblush;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Baloo Bhaina 2", cursive;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 8px;
+  min-width: 470px;
+  margin: 0;
+}
+
+.shine {
+  font-family: "Sacramento", cursive;
+  font-style: italic;
+  text-transform: capitalize;
+  font-size: 250%;
+  line-height: 1;
+  letter-spacing: normal;
+}
+
+.lights {
+  position: relative;
+}
+.light {
+  position: absolute;
+  width: 5px;
+  height: 90px;
+  border: 1px solid lightyellow;
+  background-color: yellow;
+  border-radius: 15px;
+  animation: progresslight 600ms infinite;
+}
+.light1 {
+  transform: rotate(135deg);
+  transform-origin: top left;
+  left: 0;
+  top: 0;
+}
+.light2 {
+  transform: rotate(-135deg);
+  transform-origin: top right;
+  right: 0;
+  top: 0;
+}
+.light3 {
+  transform: rotate(-135deg);
+  transform-origin: bottom left;
+  left: 0;
+  bottom: 0;
+}
+.light4 {
+  transform: rotate(135deg);
+  transform-origin: bottom left;
+  right: 0;
+  bottom: 0;
+}
+.light5 {
+  transform: rotate(90deg);
+  top: 50%;
+  transform-origin: top center;
+}
+.light6 {
+  transform: rotate(-90deg);
+  top: 50%;
+  right: 0;
+  transform-origin: top center;
+}
+.small {
+  font-size: 70%;
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px;}
+}
+
+@keyframes progresslight {
+  0% {
+      opacity: .1;
+  }
+  100% {
+      opacity: 1
+  }
+}
